@@ -79,7 +79,7 @@ def main_window():
                     merge_data[i]=sheet[merge_location[i]].value+merge_data[i]
                     workbookmerge=openpyxl.load_workbook(template_path)
                     sheetmerge= workbookmerge.worksheets[0]
-        print(merge_data)
+        
         for i in range(len(merge_location)):
             sheetmerge[merge_location[i]].value=merge_data[i]
             workbookmerge.save(template_path)
