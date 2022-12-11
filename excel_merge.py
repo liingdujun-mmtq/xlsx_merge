@@ -6,20 +6,29 @@ from tkinter import END
 from tkinter import filedialog
 import os
 import openpyxl
+#v0.91 
+#fix: location_split(A)
 
+
+#read Merge Location
+#tansfrom “A1:4” to ['A1','A2,'A3','A4]
 def location_split(A):
     location=[]
     for j in A:
-        for i in range(len(j)):
-            if j[i] in '1234567890':
-                location_ABC=j[0:i]
-                [location_NUM_start,location_NUM_end]=j[i:].split(':')
-                location_NUM=list(range(int(location_NUM_start),int(location_NUM_end)+1))
+        if ':' in j:
+            for i in range(len(j)):
+                if j[i] in '1234567890':
+                    location_ABC=j[0:i]
+                    [location_NUM_start,location_NUM_end]=j[i:].split(':')
+                    location_NUM=list(range(int(location_NUM_start),int(location_NUM_end)+1))
             
-                for i in location_NUM:
-                    location.append(location_ABC+str(i))
-                break
+                    for i in location_NUM:
+                        location.append(location_ABC+str(i))
+                    break
+        else:
+            location.append(j)
     return location
+
 
 def main_window():
     root=tk.Tk()
