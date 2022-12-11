@@ -6,8 +6,9 @@ from tkinter import END
 from tkinter import filedialog
 import os
 import openpyxl
-#v0.91 
+#v0.92
 #fix: location_split(A)
+#fix: open xlsx files with data_only
 
 
 #read Merge Location
@@ -71,7 +72,7 @@ def main_window():
             merge_data.append(0)
 
         for filename in xlsx_files:
-            workbook=openpyxl.load_workbook(xlsx_path+'/'+filename)
+            workbook=openpyxl.load_workbook(xlsx_path+'/'+filename,data_only=True)
             sheet= workbook.worksheets[0]
             for i in range(len(merge_location)):
                 if sheet[merge_location[i]].value != None:
