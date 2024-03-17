@@ -1,0 +1,44 @@
+set c="C:\Program Files\Git\usr\bin\cp.exe"
+set dst=C:\Users\Game\Code\xlsx_merge\xlsx_merge.dist
+set libsrc=C:\Users\Game\AppData\Local\Programs\Python\Python311\Lib
+set dllsrc=C:\Users\Game\AppData\Local\Programs\Python\Python311\DLLs
+set srcdir=C:\Users\Game\AppData\Local\Programs\Python\Python311\Lib\site-packages
+
+
+%c%  %srcdir%\openpyxl %dst% -rf 
+%c%  %srcdir%\et_xmlfile %dst% -rf 
+%c%  %libsrc%\xml  %dst% -rf
+%c%  %dllsrc%\pyexpat.pyd %dst% -rf 
+
+%c%  %srcdir%\pandas %dst% -rf 
+%c%  %srcdir%\numpy %dst% -rf 
+%c%  %srcdir%\pytz %dst% -rf 
+%c%  %srcdir%\dateutil %dst% -rf 
+%c%  %srcdir%\pandas %dst% -rf 
+%c%  %srcdir%\mkl %dst% -rf 
+%c%  %srcdir%\six.py %dst% -rf 
+ 
+
+
+
+%c%  %libsrc%\urllib %dst% -rf 
+%c%  %libsrc%\textwrap.py %dst% -rf 
+%c%  %libsrc%\secrets.py %dst% -rf 
+%c%  %libsrc%\hmac.py %dst% -rf 
+%c%  %libsrc%\hashlib.py %dst% -rf 
+%c%  %libsrc%\random.py %dst% -rf 
+%c%  %libsrc%\bz2.py %dst% -rf 
+%c%  %libsrc%\decimal.py %dst% -rf 
+%c%  %libsrc%\_pydecimal.py %dst% -rf 
+%c%  %libsrc%\ctypes %dst% -rf 
+%c%  %libsrc%\csv.py %dst% -rf 
+%c%  %libsrc%\uuid.py %dst% -rf
+%c%  %libsrc%\socket.py  %dst% -rf
+%c%  %libsrc%\tempfile.py  %dst% -rf
+
+
+
+%c%  %dllsrc%\_bz2.pyd %dst% -rf 
+%c%  %dllsrc%\_ctypes.pyd %dst% -rf 
+%c%  %dllsrc%\libffi-7.dll %dst% -rf 
+%c%  %dllsrc%\_socket.pyd %dst% -rf 

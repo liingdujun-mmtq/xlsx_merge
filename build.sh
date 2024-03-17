@@ -1,1 +1,1 @@
- nuitka --standalone --windows-disable-console --enable-plugin=tk-inter --remove-output  .\xlsx_merge.py
+nuitka --standalone --windows-disable-console --enable-plugin=tk-inter --remove-output  --follow-imports --nofollow-import-to=numpy  --nofollow-import-to=pandas --nofollow-import-to=openpyxl  .\xlsx_merge.py
