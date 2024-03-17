@@ -33,8 +33,6 @@ Works on：
 #### Other user
 If the all used module has been installed, you can execute the py file directly.
 
-Note: Crystal_calculator_linux_mac.py is recommended for use in Linux/Mac 
-
 The list of used module is here:
 * openpyxl
 
