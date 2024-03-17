@@ -17,4 +17,26 @@ You can use the following format in Merge Location
 
 Note! The Excel-like format such as "A3:C9" is not support now.
 
+## Release
 
+#### Windows user
+You can download a exe file build for windows system at [release page](https://github.com/liingdujun-mmtq/xlsx_merge/releases).
+
+##### System compatibility
+Works on：
++ Windows 10 2004 64bit
++ Windows 8.1 64 bit
++ Windows 7 SP1 32bit (need KB2533623 update)
+
+* For win7/8 user: If *.dll lost, you may need install [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+
+#### Other user
+If the all used module has been installed, you can execute the py file directly.
+
+Note: Crystal_calculator_linux_mac.py is recommended for use in Linux/Mac 
+
+The list of used module is here:
+* openpyxl
+
+## Acknowledgements
+Thanks for the testing and support from Hefei University of Technology (HFUT, Hefei, China).
