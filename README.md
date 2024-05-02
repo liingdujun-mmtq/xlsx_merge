@@ -12,10 +12,11 @@ xlsx_merge is a APP used to merge multiple xlsx file with the same format,sum th
 You can use the following format in Merge Location
 
 - Write out each cell separately, and separate them with ",", such as: A1,A2,C3,D9
-- Write out multiple cells in the same column in Excel format, such as: A3:9
-- Mix the above two methods, and separate them with ",", such as: A3:9, B2:5, C8
+- Write out multiple cells in the same column in Excel format, such as: A3:6, which is equivalent to A3,A4,A5,A6 
+- Excel style multiple cells, such as A3:B5, which is equivalent to A3,A4,A5,B3,B4,B5 
+- Mix the above three methods, and separate them with ",", such as: A3:9, B2:5, C8
 
-Note! The Excel-like format such as "A3:C9" is not support now.
+Note! All letters must be capitalized!
 
 ## Release
 
