@@ -1,5 +1,5 @@
 # xlsx_merge
-<<<<<<< HEAD
+
 xlsx_merge is a APP used to merge multiple xlsx file with the same format,sum the specified positions and write them into a new table
 xlsx_merge 是一个将多个xlsx文件中指定位置的数值累加并写入另一个xlsx文件中的APP。
 
