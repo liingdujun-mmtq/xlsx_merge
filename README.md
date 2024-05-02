@@ -10,9 +10,11 @@ xlsx_merge 是一个将多个xlsx文件中指定位置的数值累加并写入�
     需要合并的xlsx文件所在的文件夹。所有需要合并的xlsx文件必须在同一个文件夹，且暂时不支持加载子文件夹中的文件。
 
 2.  Template File：merged data will write into the Template File
+
     数据合并后写入的xlsx文件
 
 3.  Merge Location：the location in Template File (suce as A1, A2, C3 or A3:A7). Only the data in Merge Location will be merged.
+
     需要合并的数据在xlsx文件中的位置。
 
 #### Merge Location
